@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.shlomit.myhwapp.NewAssignmentActivity">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".ui.MainActivity">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical|right"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar_menu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#00a7f5"
+                android:minHeight="?attr/actionBarSize" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tvJobName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:padding="10dp"
+                    android:text="שם המטלה:"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:id="@+id/etJobName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:layout_weight="1"
+                    android:padding="10dp"
+                    android:text=""
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/tvJobDate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:padding="10dp"
+                    android:text="תאריך הגשה:"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:id="@+id/etJobDate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:layout_weight="1"
+                    android:hint="Select Date"
+                    android:inputType="datetime|date"
+                    android:padding="10dp"
+                    android:text=""
+                    android:textSize="18sp" />
+
+
+                <TextView
+                    android:id="@+id/tvJobDetails"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:padding="10dp"
+                    android:text="פרטים נוספים:"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:id="@+id/etJobDetails"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:layout_weight="1"
+                    android:padding="10dp"
+                    android:text=""
+                    android:textSize="18sp" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnJobOK"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="saveDetailsJob"
+            android:text="אישור + הוספת תזכורת בלוח שנה" />
+
+        <Button
+            android:id="@+id/btnCreateFolders"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="createFolderPerAssignment"
+            android:text="צור תיקייה ב- DRIVE" />
+
+    </LinearLayout>
+</RelativeLayout>

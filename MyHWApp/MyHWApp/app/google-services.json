@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "866467242929",
+    "firebase_url": "https://myhwapp-53713.firebaseio.com",
+    "project_id": "myhwapp-53713",
+    "storage_bucket": "myhwapp-53713.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:866467242929:android:de1f6f6d9a7a6fbb",
+        "android_client_info": {
+          "package_name": "com.example.shlomit.myhwapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "866467242929-ikr4jtu38f1iqq300sik229n1av6v4dh.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.shlomit.myhwapp",
+            "certificate_hash": "328dec678b6f8457202f7b282e7a8e290cad53d3"
+          }
+        },
+        {
+          "client_id": "866467242929-1vl05rm7usj8jknd898s99f9hhvv323v.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBXoMnDARVPdPrgsoJyVRZheKxD87hku7I"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "866467242929-1vl05rm7usj8jknd898s99f9hhvv323v.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
